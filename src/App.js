@@ -34,7 +34,7 @@ class App extends React.Component {
         <input className='disp' disabled onChange={(event) => this.handleClick(event)} value={this.state.display}/>
         <div>
           <Button handleClick={() => this.setState({display: ""})} text="C"/>
-          <Button handleClick={() => this.setState({display: this.state.display.slice(0, -1)})} text="--" />
+          <Button handleClick={() => this.setState({display: this.state.display.slice(0, -1)})} text="Del" />
           <Button handleClick={(event) => this.handleClick(event)} text="/" />
           <Button handleClick={(event) => this.handleClick(event)} text="*" />
         </div>
